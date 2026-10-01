@@ -1,0 +1,160 @@
+.naslov {
+  text-align: center;
+  font-family: var(--text);
+  color: black;
+  font-size: 60px;
+  font-weight: bold;
+  background-color: var(--yellow-color);
+  padding: 10px 20px;
+  border-radius: 10px;
+  align-self: center;
+}
+
+.podnaslov {
+  text-align: center;
+  font-family: var(--text);
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: grey;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.dugme {
+  text-align: center;
+  font-family: var(--text);
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: var(--orange-color);
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.dugme:hover {
+  transform: scale(1.05);
+}
+
+.dugme:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.forma-kontejner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 400px;
+}
+
+.tabela {
+  font-size: 18px;
+  font-family: var(--text);
+  border-radius: 6px;
+}
+
+.tabela,
+th,
+td {
+  border: 3px solid grey;
+}
+
+.tabela th {
+  font-weight: bold;
+  padding: 20px;
+  background-color: var(--orange-color);
+  color: white;
+}
+
+.tabela td {
+  padding: 20px;
+}
+
+.tabela .dugme {
+  background-color: grey;
+}
+
+.forma {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.labela {
+  display: block;
+  font-family: var(--text);
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.ulaz {
+  width: 100%;
+  padding: 10px;
+  font-family: var(--text);
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.radio {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.radio__labela {
+  font-family: var(--text);
+  color: black;
+  font-size: 18px;
+}
+
+.radio__dugme {
+  accent-color: var(--orange-color);
+  margin-right: 5px;
+}
+
+.greska {
+  color: red;
+  font-family: var(--text);
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: -20px;
+  align-self: center;
+}
+
+.strana__greska {
+  color: red;
+  font-family: var(--text);
+  font-weight: bold;
+  align-self: center;
+  margin-top: 50px;
+  font-size: 26px;
+}
+
+.forma__greska {
+  color: red;
+  font-family: var(--text);
+  font-weight: bold;
+  align-self: center;
+  margin-top: -10px;
+  font-size: 16px;
+}
+
+.forma__uspeh {
+  color: black;
+  font-family: var(--text);
+  font-weight: bold;
+  align-self: center;
+  font-size: 20px;
+}

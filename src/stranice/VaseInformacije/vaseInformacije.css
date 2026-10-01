@@ -1,0 +1,38 @@
+.vaseInformacije {
+  padding-top: 50px;
+  padding-bottom: 200px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+h2 {
+  align-self: flex-start;
+}
+
+.vaseInformacije__sve {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+.vaseInformacije__osiguranik,
+.vaseInformacije__motocikl {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  gap: 10px;
+  font-family: var(--text);
+  color: black;
+  align-self: flex-start;
+}
+
+.vaseInformacije__osiguranik b,
+.vaseInformacije__motocikl b {
+  font-weight: bold;
+}
