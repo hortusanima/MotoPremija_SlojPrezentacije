@@ -1,9 +1,11 @@
+import { useNavigate } from "react-router-dom";
 import { useAutorizacija } from "../../kontekst/Autorizacija/AutorizacijaKontekst";
 import { useModal } from "../../kontekst/Modal/ModalKontekst";
 import "./pocetna.css";
 
 const Pocetna: React.FC = () => {
   const { autorizovan } = useAutorizacija();
+  const navigate = useNavigate();
   const { otvoriModal } = useModal();
   return (
     <>
@@ -21,8 +23,18 @@ const Pocetna: React.FC = () => {
         <div className="pocetna__dugmad-kontejner">
           {autorizovan ? (
             <>
-              <button className="dugme">Vaše informacije</button>
-              <button className="dugme">Pogledaj polise</button>
+              <button
+                className="dugme"
+                onClick={() => navigate("/vase-informacije")}
+              >
+                Vaše informacije
+              </button>
+              <button
+                className="dugme"
+                onClick={() => navigate("/pregled-osiguranja")}
+              >
+                Pogledaj polise
+              </button>
             </>
           ) : (
             <>
